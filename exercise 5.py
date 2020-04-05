@@ -5,3 +5,21 @@
 #Пользователь ввел число 8. Результат: 8, 7, 5, 3, 3, 2.
 #Пользователь ввел число 1. Результат: 7, 5, 3, 3, 2, 1.
 #Набор натуральных чисел можно задать непосредственно в коде, например, my_list = [7, 5, 3, 3, 2].
+
+some_lst = [7, 5, 3, 3, 2]
+print(f"Ваш рейтинг - {some_lst}")
+number = int(input("Введите число для подстановки в рейтинг. \n Для выхода из циела введите 100500\n"))
+print(some_lst[0], some_lst[-1])
+while number != 100500:
+    for elem in range(len(some_lst)):
+        if some_lst[elem] == number:
+            some_lst.insert(elem + 1, number)
+            break
+        elif some_lst[0] < number:
+            some_lst.insert(0, number)
+        elif some_lst[-1] > number:
+            some_lst.append(number)
+        elif some_lst[elem] > number and some_lst[elem + 1] < number:
+            some_lst.insert(elem + 1, number)
+    print(f"Ваш текущий список - {some_lst}")
+    number = int(input("Введите число. Не забывайте. Для выхода введите 100500\n"))

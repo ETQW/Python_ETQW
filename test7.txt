@@ -1,0 +1,4 @@
+BobiQ   OOO   1000   5000
+Petrovich-Tour ZAO 5000 1000
+Gevorkyan IP 10000 5000
+Ktotovichi OOO 12000 10000

@@ -1,0 +1,8 @@
+Petrov 1000
+Sidorov 23000
+Gnusyak 52000
+Gubkina 5000
+Petichkin 20000
+Varvarova 100000
+filipok 2789
+Sinichkina 6389
